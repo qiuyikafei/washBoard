@@ -6,14 +6,14 @@
     <!-- chrome,firefox,ghost和ie不区分大小写 -->
     <parameter name="browserName" value="chrome" />
     <!-- 页面元素10秒不出现超时时间 -->
-    <parameter name="timeOut" value="20" />
+    <parameter name="timeOut" value="30" />
     <!-- 定义测试的站点 -->
     <parameter name="testurl" value="https://wb02.kiosoft.com/" />
 
     <!-- 定义测试模块，用test标签包围 -->
     <test name="Login" preserve-order="true">
         <packages>
-            <package name="com.tti.washBoard.testCases.login.login" />
+            <package name="com.tti.washBoard.testCases.login" />
         </packages>
     </test>
 

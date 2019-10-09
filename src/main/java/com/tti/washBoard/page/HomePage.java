@@ -8,15 +8,12 @@ import org.openqa.selenium.By;
 public class HomePage {
     
     /**用户名显示区域*/
-    public static final By HP_TEXT_USERNAME= By.className("page-header");
-    /**Flights按钮*/
-    public static final By HP_BUTTON_FLIGHTS = By.xpath("//*[@src='/WebTours/images/flights.gif']");
-    /**Itinerary按钮*/
-    public static final By HP_BUTTON_ITINERARY = By.xpath("//*[@src='/WebTours/images/itinerary.gif']");
-    /**Home按钮*/
-    public static final By HP_BUTTON_HOME = By.xpath("//*[@src='/WebTours/images/in_home.gif']");
-    /**Sign Off按钮*/
-    public static final By HP_BUTTON_SIGNOFF = By.xpath("//*[@src='/WebTours/images/signoff.gif']");
+    public static final By HP_TEXT_USERNAME= By.xpath("//div[@class='user-panel']//a"); 
+    /**头部washboard图片*/
+    public static final By HP_BUTTON_FLIGHTS = By.xpath("//div[@class='col-md-4']//img");
+    /**底部kiosoft图片*/
+    public static final By HP_BUTTON_ITINERARY = By.xpath("//div[@id='footer']//img");
     /**首页完整文本*/
-    public static final By HP_TEXT_HOME= By.xpath("//blockquote");    
+    public static final By HP_TEXT_HOME= By.className("page-header");  
+    
 }

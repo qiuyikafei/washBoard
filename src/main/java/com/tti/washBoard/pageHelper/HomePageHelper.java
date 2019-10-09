@@ -23,22 +23,20 @@ public class HomePageHelper {
      *            等待元素超时的时间
      * */
     public static void waitHomePageLoad(SeleniumUtil seleniumUtil, int timeOut) {
-        FramePageHelper.jumpOut(seleniumUtil);
+        //FramePageHelper.jumpOut(seleniumUtil);
         // 等待body frame显示出来
-        seleniumUtil.waitForElementToLoad(timeOut, FramePage.FP_FRAME_BODY);
-        FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_BODY);// 先进入到body
+        //seleniumUtil.waitForElementToLoad(timeOut, FramePage.FP_FRAME_BODY);
+        //FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_BODY);// 先进入到body
                                                                                 // frame中
         // 等待navbar frame显示出来
-        seleniumUtil.waitForElementToLoad(timeOut, FramePage.FP_FRAME_NAVBAR);
-        FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_NAVBAR);// 再进入body
+        //seleniumUtil.waitForElementToLoad(timeOut, FramePage.FP_FRAME_NAVBAR);
+       // FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_NAVBAR);// 再进入body
                                                                                 // frame的子frame:navbar
                                                                                 // frame中
         logger.info("开始等待首页元素加载");
         seleniumUtil.waitForElementToLoad(timeOut, HomePage.HP_BUTTON_FLIGHTS);
         seleniumUtil
                 .waitForElementToLoad(timeOut, HomePage.HP_BUTTON_ITINERARY);
-        seleniumUtil.waitForElementToLoad(timeOut, HomePage.HP_BUTTON_HOME);
-        seleniumUtil.waitForElementToLoad(timeOut, HomePage.HP_BUTTON_SIGNOFF);
         logger.info("首页元素加载完毕");
         FramePageHelper.jumpOut(seleniumUtil);
 
@@ -49,9 +47,9 @@ public class HomePageHelper {
      * */
     public static void checkUserName(SeleniumUtil seleniumUtil, int timeOut,
             String username) {
-        FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_BODY);// 先进入到body
+        //FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_BODY);// 先进入到body
                                                                                 // frame中
-        FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_INFO);// 先进入到body
+        //FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_INFO);// 先进入到body
                                                                                 // frame中的子frame:info
                                                                                 // frame中
         logger.info("开始检查用户名是不是：" + username);

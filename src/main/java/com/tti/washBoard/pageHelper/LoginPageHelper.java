@@ -25,9 +25,9 @@ public class LoginPageHelper {
         // 对此处的解释：这个登录页面有两个大frame，一个header一个body ,
         // 而登录的用户名、密码输入框以及登录按钮都在body frame下的navbar frame下,
         // 所以先要进入body frame中，然后在进入navbar frame中，才能查找到登录界面的相关元素
-        FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_BODY);// 先进入到body
+        //FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_BODY);// 先进入到body
                                                                                 // frame中
-        FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_NAVBAR);// 再进入body
+       // FramePageHelper.jumpInToFrame(seleniumUtil, FramePage.FP_FRAME_NAVBAR);// 再进入body
                                                                                 // frame的子frame:navbar
                                                                                 // frame中
         logger.info("开始检查登录页面元素");

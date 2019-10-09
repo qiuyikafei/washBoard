@@ -1,10 +1,15 @@
 package com.tti.washBoard.base;
+import java.io.IOException;
+import java.util.Iterator;
+
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 
+import com.tti.washBoard.utils.ExcelDataProvider;
 import com.tti.washBoard.utils.LogConfiguration;
 import com.tti.washBoard.utils.SeleniumUtil;
 public class BaseParpare {
@@ -37,6 +42,29 @@ public class BaseParpare {
         }
         //设置一个testng上下文属性，将driver存起来，之后可以使用context随时取到，主要是提供arrow 获取driver对象使用的，因为arrow截图方法需要一个driver对象
         testContext.setAttribute("SELENIUM_DRIVER", seleniumUtil.driver);
+    }
+    
+    
+    /**
+     * 测试数据提供者 - 方法
+     * */
+    @DataProvider(name = "testData")
+    public Iterator<Object[]> dataFortestMethod() throws IOException {
+        String moduleName = null; // 模块的名字
+        String caseNum = null; // 用例编号
+        String className = this.getClass().getName();
+        int dotIndexNum = className.indexOf("."); // 取得第一个.的index
+        int underlineIndexNum = className.indexOf("_"); // 取得第一个_的index
+
+        if (dotIndexNum > 0) {    
+            moduleName = className.substring(28, className.lastIndexOf(".")); // 取到模块的名称
+        }
+
+        if (underlineIndexNum > 0) {
+            caseNum = className.substring(underlineIndexNum + 1, underlineIndexNum + 4); // 取到用例编号
+        }
+        //将模块名称和用例的编号传给 ExcelDataProvider ，然后进行读取excel数据
+        return new ExcelDataProvider(moduleName, caseNum);
     }
 
     @AfterClass
