@@ -150,7 +150,8 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.tti.washBoard.plugins.arrow.TestResultListener&quot;/&gt;
     &lt;listener class-name=&quot;com.tti.washBoard.plugins.arrow.RetryListener&quot;/&gt;
-    &lt;listener class-name=&quot;com.tti.washBoard.plugins.arrow.PowerEmailableReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Login&quot;&gt;
     &lt;packages&gt;
@@ -201,12 +202,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginSuccessFunction')
 data.setCell(0, 2, 'com.tti.washBoard.testCases.login.LoginPage_001_LoginSuccessFunction_Test')
-data.setCell(0, 3, 8582);
+data.setCell(0, 3, 9276);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -234,16 +235,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.tti.washBoard.testCases.login.LoginPage_001_LoginSuccessFunction_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">startTest(org.testng.TestRunner@4d6f197e)</span>
+                <span class="method-name">startTest(org.testng.TestRunner@3b00856b)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginSuccessFunction({passWord=123456, userName=admin@wb02.com, loginName=admin})</span>
-                <span class="method-start">9799 ms</span>
+                <span class="method-start">9287 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">endTest</span>
-                <span class="method-start">18428 ms</span>
+                <span class="method-start">18612 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

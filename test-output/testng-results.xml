@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19288" started-at="2019-10-09T14:39:37 CST" finished-at="2019-10-09T14:39:56 CST">
+  <suite name="Suite" duration-ms="19450" started-at="2019-10-10T17:30:01 CST" finished-at="2019-10-10T17:30:20 CST">
     <groups>
     </groups>
-    <test name="Login" duration-ms="19288" started-at="2019-10-09T14:39:37 CST" finished-at="2019-10-09T14:39:56 CST">
+    <test name="Login" duration-ms="19450" started-at="2019-10-10T17:30:01 CST" finished-at="2019-10-10T17:30:20 CST">
       <class name="com.tti.washBoard.testCases.login.LoginPage_001_LoginSuccessFunction_Test">
-        <test-method status="PASS" signature="startTest(org.testng.ITestContext)[pri:0, instance:com.tti.washBoard.testCases.login.LoginPage_001_LoginSuccessFunction_Test@740cae06]" name="startTest" is-config="true" duration-ms="9694" started-at="2019-10-09T14:39:37 CST" finished-at="2019-10-09T14:39:47 CST">
+        <test-method status="PASS" signature="startTest(org.testng.ITestContext)[pri:0, instance:com.tti.washBoard.testCases.login.LoginPage_001_LoginSuccessFunction_Test@23986957]" name="startTest" is-config="true" duration-ms="9173" started-at="2019-10-10T17:30:01 CST" finished-at="2019-10-10T17:30:10 CST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4d6f197e]]>
+                <![CDATA[org.testng.TestRunner@3b00856b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="loginSuccessFunction(java.util.Map)[pri:0, instance:com.tti.washBoard.testCases.login.LoginPage_001_LoginSuccessFunction_Test@740cae06]" name="loginSuccessFunction" duration-ms="8582" started-at="2019-10-09T14:39:47 CST" data-provider="testData" finished-at="2019-10-09T14:39:55 CST">
+        <test-method status="PASS" signature="loginSuccessFunction(java.util.Map)[pri:0, instance:com.tti.washBoard.testCases.login.LoginPage_001_LoginSuccessFunction_Test@23986957]" name="loginSuccessFunction" duration-ms="9276" started-at="2019-10-10T17:30:10 CST" data-provider="testData" finished-at="2019-10-10T17:30:19 CST">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccessFunction -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.tti.washBoard.testCases.login.LoginPage_001_LoginSuccessFunction_Test@740cae06]" name="endTest" is-config="true" duration-ms="847" started-at="2019-10-09T14:39:55 CST" finished-at="2019-10-09T14:39:56 CST">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.tti.washBoard.testCases.login.LoginPage_001_LoginSuccessFunction_Test@23986957]" name="endTest" is-config="true" duration-ms="825" started-at="2019-10-10T17:30:19 CST" finished-at="2019-10-10T17:30:20 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
