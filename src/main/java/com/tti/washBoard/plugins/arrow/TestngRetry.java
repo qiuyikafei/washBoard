@@ -5,6 +5,7 @@ import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import com.tti.washBoard.plugins.arrow.utils.ConfigReader;
 import com.tti.washBoard.utils.LogConfiguration;
 
 public class TestngRetry implements IRetryAnalyzer {

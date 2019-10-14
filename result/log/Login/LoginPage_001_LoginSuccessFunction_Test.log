@@ -1,31 +1,31 @@
-[2019-10-10 17:30:01] [INFO] 当前操作系统是:[Windows 10]
-[2019-10-10 17:30:01] [INFO] 启动测试浏览器：[chrome]
-[2019-10-10 17:30:03] [INFO] 最大化浏览器:chrome
-[2019-10-10 17:30:10] [INFO] 打开测试页面:[https://wb02.kiosoft.com/]
-[2019-10-10 17:30:10] [INFO] loginSuccessFunction 测试用例开始执行！
-[2019-10-10 17:30:11] [INFO] 开始检查登录页面元素
-[2019-10-10 17:30:11] [INFO] 开始查找元素[By.name: login]
-[2019-10-10 17:30:11] [INFO] 找到了元素 [By.name: login]
-[2019-10-10 17:30:11] [INFO] 开始查找元素[By.name: password]
-[2019-10-10 17:30:11] [INFO] 找到了元素 [By.name: password]
-[2019-10-10 17:30:11] [INFO] 开始查找元素[By.id: btn-submit]
-[2019-10-10 17:30:11] [INFO] 找到了元素 [By.id: btn-submit]
-[2019-10-10 17:30:11] [INFO] 检查登录页面元素完毕
-[2019-10-10 17:30:11] [INFO] 开始输入登录信息
-[2019-10-10 17:30:11] [INFO] 清除元素 [By.name: login]上的内容
-[2019-10-10 17:30:11] [INFO] 输入：[admin@wb02.com] 到 [By.name: login]
-[2019-10-10 17:30:11] [INFO] 清除元素 [By.name: password]上的内容
-[2019-10-10 17:30:11] [INFO] 输入：[123456] 到 [By.name: password]
-[2019-10-10 17:30:11] [INFO] 输入登录信息完毕
-[2019-10-10 17:30:15] [INFO] 点击元素 [By.id: btn-submit]
-[2019-10-10 17:30:15] [INFO] 开始等待首页元素加载
-[2019-10-10 17:30:15] [INFO] 开始查找元素[By.xpath: //div[@class='col-md-4']//img]
-[2019-10-10 17:30:19] [INFO] 找到了元素 [By.xpath: //div[@class='col-md-4']//img]
-[2019-10-10 17:30:19] [INFO] 开始查找元素[By.xpath: //div[@id='footer']//img]
-[2019-10-10 17:30:19] [INFO] 找到了元素 [By.xpath: //div[@id='footer']//img]
-[2019-10-10 17:30:19] [INFO] 首页元素加载完毕
-[2019-10-10 17:30:19] [INFO] 开始检查用户名是不是：admin
-[2019-10-10 17:30:19] [INFO] 找到了期望的文字: [admin]
-[2019-10-10 17:30:19] [INFO] 用户名检查完毕,用户名是：admin
-[2019-10-10 17:30:19] [INFO] loginSuccessFunction 测试用例执行成功！
-[2019-10-10 17:30:20] [INFO] 执行成功的用例 = loginSuccessFunction
+[2019-10-14 17:28:05] [INFO] 当前操作系统是:[Windows 10]
+[2019-10-14 17:28:05] [INFO] 启动测试浏览器：[chrome]
+[2019-10-14 17:28:08] [INFO] 最大化浏览器:chrome
+[2019-10-14 17:28:16] [INFO] 打开测试页面:[https://wb02.kiosoft.com/]
+[2019-10-14 17:28:16] [INFO] loginSuccessFunction 测试用例开始执行！
+[2019-10-14 17:28:17] [INFO] 开始检查登录页面元素
+[2019-10-14 17:28:17] [INFO] 开始查找元素[By.name: login]
+[2019-10-14 17:28:17] [INFO] 找到了元素 [By.name: login]
+[2019-10-14 17:28:17] [INFO] 开始查找元素[By.name: password]
+[2019-10-14 17:28:17] [INFO] 找到了元素 [By.name: password]
+[2019-10-14 17:28:17] [INFO] 开始查找元素[By.id: btn-submit]
+[2019-10-14 17:28:17] [INFO] 找到了元素 [By.id: btn-submit]
+[2019-10-14 17:28:17] [INFO] 检查登录页面元素完毕
+[2019-10-14 17:28:17] [INFO] 开始输入登录信息
+[2019-10-14 17:28:17] [INFO] 清除元素 [By.name: login]上的内容
+[2019-10-14 17:28:17] [INFO] 输入：[admin@wb02.com] 到 [By.name: login]
+[2019-10-14 17:28:17] [INFO] 清除元素 [By.name: password]上的内容
+[2019-10-14 17:28:17] [INFO] 输入：[123456] 到 [By.name: password]
+[2019-10-14 17:28:17] [INFO] 输入登录信息完毕
+[2019-10-14 17:28:21] [INFO] 点击元素 [By.id: btn-submit]
+[2019-10-14 17:28:21] [INFO] 开始等待首页元素加载
+[2019-10-14 17:28:21] [INFO] 开始查找元素[By.xpath: //div[@class='col-md-4']//img]
+[2019-10-14 17:28:23] [INFO] 找到了元素 [By.xpath: //div[@class='col-md-4']//img]
+[2019-10-14 17:28:23] [INFO] 开始查找元素[By.xpath: //div[@id='footer']//img]
+[2019-10-14 17:28:23] [INFO] 找到了元素 [By.xpath: //div[@id='footer']//img]
+[2019-10-14 17:28:23] [INFO] 首页元素加载完毕
+[2019-10-14 17:28:23] [INFO] 开始检查用户名是不是：admin
+[2019-10-14 17:28:23] [INFO] 找到了期望的文字: [admin]
+[2019-10-14 17:28:23] [INFO] 用户名检查完毕,用户名是：admin
+[2019-10-14 17:28:23] [INFO] loginSuccessFunction 测试用例执行成功！
+[2019-10-14 17:28:24] [INFO] 执行成功的用例 = loginSuccessFunction
