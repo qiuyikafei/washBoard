@@ -2,6 +2,8 @@ package com.tti.washBoard.plugins.arrow;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import org.apache.log4j.Logger;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
 
@@ -17,9 +19,9 @@ public class ZTesReport implements IReporter {
     private Date date = new Date(currentTime);
     private String reportdate = formatter.format(date);
     // 定义生成测试报告的路径和文件名，为兼容Windows和Linux此处使用File.separator代替分隔符
-    private String path = System.getProperty("user.dir")+File.separator+reportdate+".html";
+    private String path =  System.getProperty("user.dir") + File.separator +"result"+File.separator+"test_report"+File.separator+reportdate+".html";
     // 定义html样式模板所在路径
-    private String templatePath = System.getProperty("user.dir")+File.separator+"template";
+    private String templatePath = System.getProperty("user.dir") + File.separator +"template"+File.separator+"template";
     
     private int testsPass = 0;
 
@@ -97,7 +99,7 @@ public class ZTesReport implements IReporter {
             List<ReportInfo> listInfo = new ArrayList<ReportInfo>();
             int index = 0;
             for (ITestResult result : list) {
-                String tn = result.getTestContext().getCurrentXmlTest().getParameter("testCase");
+                String tn = result.getTestContext().getCurrentXmlTest().getParameter("testurl");
                 if(index==0){
                     SimpleDateFormat formatter = new SimpleDateFormat ("yyyy-MM-dd HH:mm:ss");
                     beginTime = formatter.format(new Date(result.getStartMillis()));
@@ -139,7 +141,8 @@ public class ZTesReport implements IReporter {
             result.put("testResult", listInfo);
             Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
             String template = this.read(templatePath);
-            BufferedWriter output = new BufferedWriter( new OutputStreamWriter(new FileOutputStream(new File(path)),"UTF-8"));
+            File file = new File(path);
+            BufferedWriter output = new BufferedWriter( new OutputStreamWriter(new FileOutputStream(file),"UTF-8"));
             template = template.replaceFirst("\\$\\{resultData\\}", Matcher.quoteReplacement(gson.toJson(result)));
             output.write(template);
             output.flush();
